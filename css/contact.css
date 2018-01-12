@@ -1,0 +1,24 @@
+@charset "utf-8";
+.contacts {
+	width: 662px;
+	margin: 0 auto;
+	line-height: 1.3;
+}
+
+form {
+	width: 480px;
+	margin: 15px auto 0px auto;
+}
+
+h2 {
+	margin-bottom: 20px;
+}
+
+textarea {
+	height: 150px;
+}
+
+p {
+	width: 275px !important;
+	text-align: left;
+}

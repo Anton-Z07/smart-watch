@@ -1,0 +1,29 @@
+h2:not(:first-child) {
+	text-align: center !important;
+}
+
+.news_content ul {
+	list-style-type: initial;
+	margin-left: 40px;
+	
+}
+
+.news_content ul li {
+	line-height: 22px !important;
+}
+
+#all { 
+	margin-top: 15px;
+}
+
+.left {
+	font-size: 17px;
+	float: none;
+	display: block;
+}
+
+h1 {
+	display: block;
+	text-align: center;
+	margin-top: 40px;
+}

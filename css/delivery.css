@@ -1,0 +1,16 @@
+table {
+	margin-top: 60px !important;
+	width: 662px;
+}
+
+#minutes_img {
+	float: left; 
+	margin-right: 20px; 
+	margin-top: -13px;
+}
+
+#free_img {
+	float: left; 
+	margin-right: 20px; 
+	margin-top: -22px;
+}

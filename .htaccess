@@ -1,0 +1,24 @@
+RewriteEngine on
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# otherwise forward it to index.php
+RewriteRule . index.php
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(.*?)index\.php([^\s]*) [NC]
+RewriteRule ^ /%1%2 [R=301,L,NE]
+
+# deny refspam
+
+RewriteCond %{HTTP_REFERER} buttons\-for\-website\.com
+RewriteRule ^.* - [F,L]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?semalt.com.*$ [NC]
+RewriteRule ^.* - [F,L]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?semalt.semalt.com.*$[NC]
+RewriteRule ^.* - [F,L]   
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?crawler.semalt.com.*$ [NC]
+RewriteRule ^.* - [F,L]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www\.)?ru.ilovevitaly.com.*$ [NC]
+RewriteRule ^.* - [F,L]

@@ -1,0 +1,1 @@
+<a href="/cart/CartPaid?id=<?= Cart::Get()->hash;?>" class="button"> Оплатить </a>

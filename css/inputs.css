@@ -1,0 +1,73 @@
+input[type=text], textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #e3e3e3;
+	font-size: 18px;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+input[type=text].error, textarea.error {
+	background-color: #FFA1A1;
+}
+
+input[type=text].phone {
+	width: 150px;
+}
+
+.form {
+	width: 515px;
+}
+
+.form-row {
+	margin-bottom: 20px;
+}
+
+.form-row>label {
+	width: 200px;
+	display: inline-block;
+	text-align: right;
+	padding-right: 10px;
+	vertical-align: middle;
+}
+
+.form-row.textarea>label {
+	vertical-align: top;
+	margin-top: 10px;
+}
+
+.form-row>div {
+	width: 300px;
+	display: inline-block;
+}
+
+.form-row>div>input[type=text], .form-row>div>textarea {
+	margin: 0;
+}
+
+.form-buttons {
+	text-align: right;
+}
+
+.button {
+	border: none;
+	border-radius: 8px;
+	padding: 10px 15px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #666666;
+	background-color: #F4F4F4;
+	font-family: 'Open Sans', sans-serif;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+}
+
+#recall_button {
+	padding: 5px 11px;
+	position: absolute;
+	left: 167px;
+	bottom: 2px;
+}
